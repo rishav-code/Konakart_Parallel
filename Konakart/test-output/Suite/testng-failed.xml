@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="Test3(failed)" parallel="tests">
+    <parameter name="browsername" value="ie"/>
+    <classes>
+      <class name="com.atmecs.Konakart.testscripts.ProductSearchTestScripts">
+        <methods>
+          <include name="negativesearch"/>
+          <include name="productSearchScript"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.ProductSearchTestScripts -->
+      <class name="com.atmecs.Konakart.testscripts.SecondScenerio">
+        <methods>
+          <include name="select"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.SecondScenerio -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="3" name="Test1(failed)" parallel="tests">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="com.atmecs.Konakart.testscripts.ProductSearchTestScripts">
+        <methods>
+          <include name="negativesearch"/>
+          <include name="productSearchScript"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.ProductSearchTestScripts -->
+      <class name="com.atmecs.Konakart.testscripts.SecondScenerio">
+        <methods>
+          <include name="select"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.SecondScenerio -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="3" name="Test2(failed)" parallel="tests">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="com.atmecs.Konakart.testscripts.ProductSearchTestScripts">
+        <methods>
+          <include name="negativesearch"/>
+          <include name="productSearchScript"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.ProductSearchTestScripts -->
+      <class name="com.atmecs.Konakart.testscripts.SecondScenerio">
+        <methods>
+          <include name="select"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.SecondScenerio -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

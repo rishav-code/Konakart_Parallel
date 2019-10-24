@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="2" name="Failed suite [suitename]" parallel="tests">
+  <test thread-count="3" verbose="2" name="Test validate firefox(failed)" parallel="tests">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="com.atmecs.Konakart.testscripts.SecondScenerio">
+        <methods>
+          <include name="select" invocation-numbers="0"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.SecondScenerio -->
+      <class name="com.atmecs.Konakart.testscripts.ProductSearchTestScripts">
+        <methods>
+          <include name="negativesearch" invocation-numbers="2 3 4 5 6"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.ProductSearchTestScripts -->
+    </classes>
+  </test> <!-- Test validate firefox(failed) -->
+  <test thread-count="3" verbose="2" name="Test validate ie(failed)" parallel="tests">
+    <parameter name="browsername" value="ie"/>
+    <classes>
+      <class name="com.atmecs.Konakart.testscripts.SecondScenerio">
+        <methods>
+          <include name="select" invocation-numbers="0"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.SecondScenerio -->
+      <class name="com.atmecs.Konakart.testscripts.ProductSearchTestScripts">
+        <methods>
+          <include name="negativesearch" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="productSearchScript" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.ProductSearchTestScripts -->
+    </classes>
+  </test> <!-- Test validate ie(failed) -->
+  <test thread-count="3" verbose="2" name="Test validate chrome(failed)" parallel="tests">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="com.atmecs.Konakart.testscripts.SecondScenerio">
+        <methods>
+          <include name="select" invocation-numbers="0"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.SecondScenerio -->
+      <class name="com.atmecs.Konakart.testscripts.ProductSearchTestScripts">
+        <methods>
+          <include name="negativesearch" invocation-numbers="2 3 4 5 6"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.Konakart.testscripts.ProductSearchTestScripts -->
+    </classes>
+  </test> <!-- Test validate chrome(failed) -->
+</suite> <!-- Failed suite [suitename] -->
